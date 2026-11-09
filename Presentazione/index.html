@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0F172A">
+  <title>CivicLink — Smart Community</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="progress-track" aria-hidden="true"><div class="progress-bar" id="progressBar"></div></div>
+  <main class="deck" id="deck" aria-label="Presentazione CivicLink">
+    <section class="slide dark cover active" data-title="Copertina">
+      <div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+      <div class="cover-layout">
+        <div class="cover-brand">
+          <img class="brand-art" src="assets/civiclink-brand.png" alt="CivicLink — Smart Community">
+          <div class="event-pill"><span class="pulse"></span> PYTHON INNOVATION HACKATHON</div>
+          <h1>Una comunità più <span>connessa.</span></h1>
+          <p class="lead">Le informazioni del territorio, finalmente in un unico luogo.</p>
+          <div class="cover-meta"><span>TEAM CIVICLINK</span><i></i><span>SMART COMMUNITY</span></div>
+        </div>
+        <div class="cover-side">
+          <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+          <div class="node n1"></div><div class="node n2"></div><div class="node n3"></div>
+          <div class="mini-home">⌂</div>
+          <div class="side-caption">Tecnologia semplice<br>per bisogni reali.</div>
+        </div>
+      </div>
+      <div class="slide-foot"><span>CIVICLINK / 2026</span><span>01 — 12</span></div>
+    </section>
+
+    <section class="slide light" data-title="Il problema">
+      <header class="section-head"><div><span class="eyebrow">01 / CONTESTO</span><h2>Il problema è <em>la dispersione.</em></h2></div><span class="chapter">PERCHÉ SERVE</span></header>
+      <p class="intro">Nelle comunità locali, le informazioni utili spesso esistono già. Il problema è trovarle, organizzarle e mantenerle aggiornate.</p>
+      <div class="problem-grid">
+        <article class="problem-card"><div class="icon-box orange"><svg viewBox="0 0 24 24"><path d="M4 5h16v12H8l-4 3z"/><path d="M8 9h8M8 13h5"/></svg></div><h3>Chat frammentate</h3><p>Segnalazioni e aggiornamenti si perdono tra messaggi e gruppi diversi.</p><span class="tag">INFORMAZIONI SPARSE</span></article>
+        <article class="problem-card"><div class="icon-box purple"><svg viewBox="0 0 24 24"><path d="M4 4h16v16H4z"/><path d="M8 8h8M8 12h8M8 16h4"/></svg></div><h3>Bacheche difficili da consultare</h3><p>Avvisi cartacei o post isolati non offrono una visione aggiornata del territorio.</p><span class="tag">SCARSA VISIBILITÀ</span></article>
+        <article class="problem-card"><div class="icon-box blue"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4 4M8 10h5M10.5 7.5v6"/></svg></div><h3>Ricerca poco efficace</h3><p>Ritrovare lo stato di una segnalazione o un oggetto smarrito richiede tempo.</p><span class="tag">TEMPI PIÙ LUNGHI</span></article>
+      </div>
+      <div class="insight"><span class="insight-mark">!</span><p><strong>Il risultato:</strong> meno coordinamento, informazioni duplicate e opportunità perse per chi vive il quartiere.</p></div>
+      <div class="slide-foot"><span>CIVICLINK / IL PROBLEMA</span><span>02 — 12</span></div>
+    </section>
+
+    <section class="slide light" data-title="La soluzione">
+      <header class="section-head"><div><span class="eyebrow">02 / LA RISPOSTA</span><h2>Un solo spazio. <em>Tre azioni.</em></h2></div><span class="chapter">LA SOLUZIONE</span></header>
+      <p class="intro">CivicLink raccoglie i dati della comunità in un flusso semplice: inserire, seguire e consultare.</p>
+      <div class="solution-grid">
+        <article class="solution-card"><div class="solution-top"><span class="step-no">01</span><div class="icon-box blue"><svg viewBox="0 0 24 24"><path d="M12 20s7-4.5 7-10a7 7 0 0 0-14 0c0 5.5 7 10 7 10Z"/><path d="M12 7v6M9 10h6"/></svg></div></div><h3>Segnala</h3><p>Registra una criticità del territorio con categoria, zona e priorità.</p><span class="solution-link">INSERIMENTO ORDINATO <b>↗</b></span></article>
+        <article class="solution-card featured"><div class="solution-top"><span class="step-no">02</span><div class="icon-box green"><svg viewBox="0 0 24 24"><path d="M4 12a8 8 0 1 0 2.3-5.6L4 8.8"/><path d="M4 4v5h5M12 7v5l3 2"/></svg></div></div><h3>Traccia</h3><p>Monitora lo stato delle segnalazioni e gestisci oggetti smarriti o ritrovati.</p><span class="solution-link">STATO SEMPRE CHIARO <b>↗</b></span></article>
+        <article class="solution-card"><div class="solution-top"><span class="step-no">03</span><div class="icon-box purple"><svg viewBox="0 0 24 24"><path d="M4 19V5M4 19h17"/><path d="M8 16v-5h3v5M13 16V7h3v9M18 16v-8h2v8"/></svg></div></div><h3>Visualizza</h3><p>Consulta dati e statistiche attraverso una dashboard leggibile e filtrabile.</p><span class="solution-link">DATI A COLPO D'OCCHIO <b>↗</b></span></article>
+      </div>
+      <div class="bottom-note"><span class="check-dot">✓</span> Un'esperienza essenziale, pensata per rendere le informazioni accessibili.</div>
+      <div class="slide-foot"><span>CIVICLINK / LA SOLUZIONE</span><span>03 — 12</span></div>
+    </section>
+
+    <section class="slide dark" data-title="Architettura">
+      <header class="section-head inverse"><div><span class="eyebrow">03 / COME FUNZIONA</span><h2>Un'architettura <em>offline-first.</em></h2></div><span class="chapter">ARCHITETTURA</span></header>
+      <p class="intro inverse-text">Un flusso lineare collega l'inserimento da terminale alla consultazione nella dashboard.</p>
+      <div class="architecture">
+        <div class="flow-row">
+          <div class="flow-node"><span class="flow-icon">⌘</span><b>Terminale</b><small>Input operatore</small></div><div class="connector">→</div>
+          <div class="flow-node primary-node"><span class="flow-icon">Py</span><b>main.py</b><small>Menu principale</small></div><div class="connector">→</div>
+          <div class="flow-node"><span class="flow-icon">ƒ</span><b>Funzioni Python</b><small>Logica e validazione</small></div>
+        </div>
+        <div class="flow-down">↓</div>
+        <div class="flow-row lower">
+          <div class="flow-node data-node"><span class="flow-icon">{ }</span><b>JSON / CSV</b><small>Esportazione dati</small></div><div class="connector">→</div>
+          <div class="flow-node"><span class="flow-icon">↥</span><b>Selezione manuale</b><small>Input file</small></div><div class="connector">→</div>
+          <div class="flow-node dashboard-node"><span class="flow-icon">▦</span><b>Dashboard</b><small>HTML / CSS / JS</small></div>
+        </div>
+      </div>
+      <div class="offline-strip"><div><span class="offline-check">✓</span><b>Nessun server</b></div><div><span class="offline-check">✓</span><b>Nessun database</b></div><div><span class="offline-check">✓</span><b>Nessuna API</b></div><div class="offline-highlight">100% OFFLINE</div></div>
+      <div class="slide-foot"><span>CIVICLINK / ARCHITETTURA</span><span>04 — 12</span></div>
+    </section>
+
+    <section class="slide light" data-title="Backend Python">
+      <header class="section-head"><div><span class="eyebrow">04 / IL MOTORE</span><h2>Backend Python: <em>gestione strutturata.</em></h2></div><span class="chapter">BACKEND</span></header>
+      <p class="intro">Il programma da terminale guida l'operatore nelle attività principali e mantiene i dati organizzati.</p>
+      <div class="backend-layout">
+        <div class="terminal-card"><div class="terminal-bar"><i></i><i></i><i></i><span>civiclink — terminale</span></div><div class="terminal-body"><p class="muted-code">╭─ CIVICLINK / GESTIONE COMUNITÀ</p><p>│ 1. Nuova segnalazione</p><p>│ 2. Elenco segnalazioni</p><p>│ 3. Oggetti smarriti / ritrovati</p><p>│ 4. Statistiche</p><p>│ 7. Esporta dati</p><p>╰─ Seleziona un'opzione: <b class="cursor">_</b></p></div></div>
+        <div class="backend-features">
+          <div class="feature-row"><span class="feature-icon">01</span><div><b>Segnalazioni territoriali</b><p>Categoria, zona, priorità e stato.</p></div></div>
+          <div class="feature-row"><span class="feature-icon">02</span><div><b>Oggetti smarriti e ritrovati</b><p>Registrazione e consultazione degli oggetti.</p></div></div>
+          <div class="feature-row"><span class="feature-icon">03</span><div><b>Statistiche ed esportazione</b><p>Riepiloghi e file JSON + CSV.</p></div></div>
+          <div class="feature-row"><span class="feature-icon">04</span><div><b>Affidabilità dei dati</b><p>Validazione input e backup automatico.</p></div></div>
+        </div>
+      </div>
+      <div class="slide-foot"><span>CIVICLINK / BACKEND PYTHON</span><span>05 — 12</span></div>
+    </section>
+
+    <section class="slide light" data-title="Dashboard">
+      <header class="section-head"><div><span class="eyebrow">05 / L'INTERFACCIA</span><h2>La dashboard, <em>tutto sotto controllo.</em></h2></div><span class="chapter">FRONTEND</span></header>
+      <p class="intro">Una vista sintetica per leggere l'andamento della comunità, filtrare le tabelle e importare i dati esportati.</p>
+      <div class="dashboard-wrap">
+        <div class="dash-window">
+          <div class="dash-top"><div class="dash-brand"><span class="tiny-logo">⌂</span><b>CivicLink</b><small>Smart Community</small></div><span class="dash-online"><i></i> Vista locale</span></div>
+          <div class="dash-content">
+            <div class="dash-title"><div><b>Panoramica</b><small>Riepilogo attività della comunità</small></div><span class="dash-date">DATI DIMOSTRATIVI</span></div>
+            <div class="metric-row"><div class="metric"><small>Segnalazioni</small><b>05</b><span>Totale registrate</span></div><div class="metric"><small>Oggetti</small><b>03</b><span>Smarriti / ritrovati</span></div><div class="metric"><small>Categorie</small><b>06</b><span>Gestite dal sistema</span></div></div>
+            <div class="dash-charts"><div class="dash-panel"><b>Segnalazioni per categoria</b><div class="bars"><i style="height:76%"></i><i style="height:48%"></i><i style="height:90%"></i><i style="height:34%"></i><i style="height:61%"></i><i style="height:25%"></i></div><div class="bar-labels"><span>Strade</span><span>Rifiuti</span><span>Verde</span><span>Altro</span></div></div><div class="dash-panel donut-panel"><b>Stato segnalazioni</b><div class="donut"></div><div class="legend"><span><i></i> Aperte</span><span><i></i> In corso</span><span><i></i> Risolte</span></div></div></div>
+            <div class="dash-table"><b>Ultime attività</b><div class="table-line"><span>Buche stradali</span><span>Centro</span><em>In corso</em></div><div class="table-line"><span>Rifiuti abbandonati</span><span>Nord</span><em class="resolved">Risolta</em></div></div>
+          </div>
+        </div>
+        <div class="dash-aside"><div class="aside-icon">↥</div><b>Importazione manuale</b><p>Il file JSON viene selezionato dall'utente e letto nel browser con <code>FileReader</code>.</p><div class="aside-tag">NESSUN COLLEGAMENTO REMOTO</div></div>
+      </div>
+      <div class="slide-foot"><span>CIVICLINK / FRONTEND DASHBOARD</span><span>06 — 12</span></div>
+    </section>
+
+    <section class="slide dark" data-title="Demo live">
+      <header class="section-head inverse"><div><span class="eyebrow">06 / PROVA PRATICA</span><h2>Dalla console alla <em>dashboard.</em></h2></div><span class="chapter">DEMO LIVE</span></header>
+      <p class="intro inverse-text">La dimostrazione segue quattro passaggi: avvio, caricamento dei dati demo, esportazione e apertura nel browser.</p>
+      <div class="demo-layout">
+        <div class="demo-steps">
+          <div class="demo-step"><span>01</span><div><b>Avvia il programma</b><small>Apri il terminale nella cartella del progetto.</small></div></div>
+          <div class="demo-step"><span>02</span><div><b>Carica i dati dimostrativi</b><small>Dal menu seleziona l'opzione 9.</small></div></div>
+          <div class="demo-step"><span>03</span><div><b>Esporta i dati</b><small>Dal menu seleziona l'opzione 7.</small></div></div>
+          <div class="demo-step"><span>04</span><div><b>Apri la dashboard</b><small>Carica il file JSON esportato tramite il selettore.</small></div></div>
+        </div>
+        <div class="demo-terminal"><div class="terminal-bar"><i></i><i></i><i></i><span>sequenza demo</span></div><pre><span class="prompt">$</span> python main.py
+
+<span class="comment"># 1. Inserisci i dati dimostrativi</span>
+<span class="prompt">Scelta:</span> 9
+<span class="success">✓ Dati demo caricati</span>
+
+<span class="comment"># 2. Esporta JSON e CSV</span>
+<span class="prompt">Scelta:</span> 7
+<span class="success">✓ Esportazione completata</span>
+
+<span class="comment"># 3. Apri e importa nella dashboard</span>
+<span class="prompt">$</span> apri frontend/index.html
+<span class="prompt">File:</span> data/exports/dashboard_data.json
+<span class="success">✓ Dashboard aggiornata</span></pre></div>
+      </div>
+      <div class="slide-foot"><span>CIVICLINK / DEMO</span><span>07 — 12</span></div>
+    </section>
+
+    <section class="slide light" data-title="I numeri">
+      <header class="section-head"><div><span class="eyebrow">07 / IN SINTESI</span><h2>Piccolo progetto, <em>struttura concreta.</em></h2></div><span class="chapter">I NUMERI</span></header>
+      <p class="intro">I dati demo mostrano le principali entità gestite e la scelta di mantenere il progetto leggero.</p>
+      <div class="numbers-grid">
+        <article class="number-card"><span class="number-icon blue">◎</span><strong>5</strong><b>Segnalazioni demo</b><small>Elementi territoriali di esempio</small><div class="number-line blue-line"></div></article>
+        <article class="number-card"><span class="number-icon green">⌕</span><strong>3</strong><b>Oggetti demo</b><small>Record smarriti / ritrovati</small><div class="number-line green-line"></div></article>
+        <article class="number-card"><span class="number-icon purple">▦</span><strong>6</strong><b>Categorie gestite</b><small>Classificazione delle segnalazioni</small><div class="number-line purple-line"></div></article>
+        <article class="number-card"><span class="number-icon orange">0</span><strong>0</strong><b>Dipendenze esterne</b><small>Solo strumenti nativi</small><div class="number-line orange-line"></div></article>
+      </div>
+      <div class="numbers-foot"><b>Il valore non è la quantità di strumenti.</b> È la chiarezza del flusso e la facilità di utilizzo.</div>
+      <div class="slide-foot"><span>CIVICLINK / I NUMERI</span><span>08 — 12</span></div>
+    </section>
+
+    <section class="slide light" data-title="Conformità hackathon">
+      <header class="section-head"><div><span class="eyebrow">08 / REQUISITI</span><h2>Essenziale per scelta. <em>Conforme per progetto.</em></h2></div><span class="chapter">HACKATHON READY</span></header>
+      <p class="intro">CivicLink rispetta i vincoli tecnici previsti, senza introdurre servizi o dipendenze non necessari.</p>
+      <div class="compliance-layout">
+        <div class="compliance-list">
+          <div class="compliance-item"><span>✓</span><div><b>Solo standard library Python</b><small>Backend senza pacchetti aggiuntivi.</small></div><em>OK</em></div>
+          <div class="compliance-item"><span>✓</span><div><b>JavaScript vanilla</b><small>Interfaccia senza framework esterni.</small></div><em>OK</em></div>
+          <div class="compliance-item"><span>✓</span><div><b>Niente server, API o database</b><small>Elaborazione locale e file-based.</small></div><em>OK</em></div>
+          <div class="compliance-item"><span>✓</span><div><b>Funzionamento offline</b><small>Utilizzo senza connessione Internet.</small></div><em>OK</em></div>
+          <div class="compliance-item"><span>✓</span><div><b>JSON caricato manualmente</b><small>Importazione tramite FileReader.</small></div><em>OK</em></div>
+        </div>
+        <div class="compliance-stamp"><div class="stamp-ring"><span>✓</span></div><b>PRONTO PER LA DEMO</b><small>Un flusso trasparente, locale e verificabile.</small><div class="stamp-mini">CIVICLINK · SMART COMMUNITY</div></div>
+      </div>
+      <div class="slide-foot"><span>CIVICLINK / CONFORMITÀ</span><span>09 — 12</span></div>
+    </section>
+
+    <section class="slide light" data-title="Sviluppi futuri">
+      <header class="section-head"><div><span class="eyebrow">09 / OLTRE L'MVP</span><h2>Possibili evoluzioni, <em>non incluse oggi.</em></h2></div><span class="chapter">ROADMAP</span></header>
+      <p class="intro">L'MVP definisce una base concreta. Queste idee rappresentano direzioni future e non funzionalità già disponibili.</p>
+      <div class="future-grid">
+        <article class="future-card"><div class="future-number">01</div><div class="future-icon">♧</div><span class="future-label">NON PRESENTE NELL'MVP</span><h3>Notifiche automatiche</h3><p>Avvisi agli utenti quando una segnalazione cambia stato o viene pubblicato un aggiornamento.</p><div class="future-bottom">EVOLUZIONE POSSIBILE <span>↗</span></div></article>
+        <article class="future-card"><div class="future-number">02</div><div class="future-icon">⌁</div><span class="future-label">NON PRESENTE NELL'MVP</span><h3>Priorità suggerita</h3><p>Un supporto alla valutazione basato sulla frequenza delle segnalazioni in una zona.</p><div class="future-bottom">EVOLUZIONE POSSIBILE <span>↗</span></div></article>
+        <article class="future-card"><div class="future-number">03</div><div class="future-icon">⌖</div><span class="future-label">NON PRESENTE NELL'MVP</span><h3>Mappa interattiva</h3><p>Una vista geografica per esplorare le segnalazioni e individuare le aree più coinvolte.</p><div class="future-bottom">EVOLUZIONE POSSIBILE <span>↗</span></div></article>
+      </div>
+      <div class="slide-foot"><span>CIVICLINK / SVILUPPI FUTURI</span><span>10 — 12</span></div>
+    </section>
+
+    <section class="slide light" data-title="Team e crediti">
+      <header class="section-head"><div><span class="eyebrow">10 / CHI C'È DIETRO</span><h2>Le persone dietro <em>CivicLink.</em></h2></div><span class="chapter">TEAM & CREDITI</span></header>
+      <p class="intro">Un progetto realizzato per il Python Innovation Hackathon — tema Smart Community.</p>
+      <div class="team-grid">
+        <article class="team-card"><div class="avatar avatar-blue">SS</div><div class="team-role">CREATORE</div><h3>SIMONE<br>STELLABOTTE</h3><span>Team CivicLink</span></article>
+        <article class="team-card"><div class="avatar avatar-purple">PR</div><div class="team-role">CREATORE</div><h3>PIETRO<br>RUSSO</h3><span>Team CivicLink</span></article>
+        <article class="team-card"><div class="avatar avatar-green">MT</div><div class="team-role">CREATORE</div><h3>EMANUELE<br>TIMBO</h3><span>Team CivicLink</span></article>
+        <article class="team-card"><div class="avatar avatar-orange">DS</div><div class="team-role">CREATORE</div><h3>DAVIDE<br>STORELLI</h3><span>Team CivicLink</span></article>
+      </div>
+      <div class="team-credit"><span class="credit-mark">✳</span><span><b>Grazie per l'attenzione.</b><small>Ideato e sviluppato in occasione del Python Innovation Hackathon.</small></span><span class="credit-topic">SMART COMMUNITY</span></div>
+      <div class="slide-foot"><span>CIVICLINK / TEAM</span><span>11 — 12</span></div>
+    </section>
+
+    <section class="slide dark closing" data-title="Grazie">
+      <div class="closing-glow"></div>
+      <div class="closing-content">
+        <img class="closing-brand" src="assets/civiclink-brand.png" alt="CivicLink — Smart Community">
+        <div class="closing-line"></div>
+        <h2>Grazie<span>.</span></h2><p>Domande?</p>
+        <div class="closing-team">SIMONE STELLABOTTE <i>·</i> PIETRO RUSSO <i>·</i> EMANUELE TIMBO <i>·</i> DAVIDE STORELLI</div>
+      </div>
+      <div class="slide-foot"><span>CIVICLINK / SMART COMMUNITY</span><span>12 — 12</span></div>
+    </section>
+  </main>
+
+  <nav class="controls" aria-label="Navigazione presentazione">
+    <button class="nav-btn" id="prevBtn" type="button" aria-label="Slide precedente">← <span>Indietro</span></button>
+    <div class="nav-center"><span id="slideCounter">1 / 12</span><div class="nav-dots" id="navDots" aria-label="Seleziona slide"></div></div>
+    <button class="nav-btn next" id="nextBtn" type="button" aria-label="Slide successiva"><span>Avanti</span> →</button>
+  </nav>
+  <script src="script.js"></script>
+</body>
+</html>

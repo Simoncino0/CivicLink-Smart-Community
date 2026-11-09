@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicLink - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="logo-wrapper">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-name">CivicLink</span>
+                    <span class="logo-sub">Smart Community</span>
+                </div>
+            </div>
+        </div>
+
+        <nav class="sidebar-nav">
+            <span class="nav-label">Menu</span>
+            <a href="#" class="nav-item active" data-section="dashboard">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zm10 0a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"/></svg>
+                <span>Dashboard</span>
+            </a>
+            <a href="#" class="nav-item" data-section="segnalazioni">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+                <span>Segnalazioni</span>
+                <span class="nav-counter" id="navCounterSeg">0</span>
+            </a>
+            <a href="#" class="nav-item" data-section="oggetti">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                <span>Oggetti</span>
+                <span class="nav-counter" id="navCounterOg">0</span>
+            </a>
+            <a href="#" class="nav-item" data-section="statistiche">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/></svg>
+                <span>Statistiche</span>
+            </a>
+            <a href="#" class="nav-item" data-section="info">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                <span>Info</span>
+            </a>
+        </nav>
+
+        <div class="sidebar-footer">
+            <div class="sidebar-status">
+                <span class="status-dot" id="statusDot"></span>
+                <span class="status-text" id="statusText">Nessun dato caricato</span>
+            </div>
+            <p class="sidebar-version">v1.0.0 &mdash; Hackathon</p>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <div class="main-wrapper">
+
+        <!-- Topbar -->
+        <header class="topbar">
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" d="M4 6h16M4 12h16M4 18h16"/></svg>
+            </button>
+
+            <div class="topbar-title-group">
+                <h2 class="topbar-title" id="pageTitle">Dashboard</h2>
+                <p class="topbar-subtitle" id="pageSubtitle">Panoramica della comunità</p>
+            </div>
+
+            <div class="topbar-right">
+                <div class="data-status" id="dataStatus">
+                    <span class="data-status-dot"></span>
+                    <span class="data-status-text" id="dataStatusText">In attesa</span>
+                </div>
+                <button class="btn-primary" id="loadDataBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                    <span>Carica Dati</span>
+                </button>
+                <input type="file" id="fileInput" accept=".json" hidden>
+            </div>
+        </header>
+
+        <!-- Toast -->
+        <div class="toast" id="toast"></div>
+
+        <!-- Content -->
+        <main class="content">
+
+            <!-- Welcome -->
+            <div id="welcomeSection" class="welcome-section">
+                <div class="welcome-card">
+                    <div class="welcome-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
+                    </div>
+                    <h2>Benvenuto in CivicLink</h2>
+                    <p>Carica il file <code>dashboard_data.json</code> esportato da Python per visualizzare i dati della comunità.</p>
+                    <label for="fileInput" class="btn-primary btn-lg">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"/></svg>
+                        Seleziona file JSON
+                    </label>
+                </div>
+            </div>
+
+            <!-- DASHBOARD -->
+            <section id="dashboardSection" class="section" style="display:none;">
+                <!-- Metrics -->
+                <div class="metrics-row">
+                    <div class="metric-card">
+                        <div class="metric-top">
+                            <span class="metric-label">Segnalazioni Totali</span>
+                            <div class="metric-icon mi-orange">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-2.5L13.732 4c-.77-.833-1.964-.833-2.732 0L4.082 16.5c-.77.833.192 2.5 1.732 2.5z"/></svg>
+                            </div>
+                        </div>
+                        <div class="metric-value" id="statTotale">0</div>
+                        <div class="metric-sub">Totale registrato</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-top">
+                            <span class="metric-label">Aperte</span>
+                            <div class="metric-icon mi-blue">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                        </div>
+                        <div class="metric-value" id="statAperte">0</div>
+                        <div class="metric-sub">In attesa di intervento</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-top">
+                            <span class="metric-label">In Lavorazione</span>
+                            <div class="metric-icon mi-purple">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.066 2.573c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.573 1.066c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.066-2.573c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                            </div>
+                        </div>
+                        <div class="metric-value" id="statLavorazione">0</div>
+                        <div class="metric-sub">In corso di risoluzione</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-top">
+                            <span class="metric-label">Risolte</span>
+                            <div class="metric-icon mi-green">
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                            </div>
+                        </div>
+                        <div class="metric-value" id="statRisolte">0</div>
+                        <div class="metric-sub">Completate con successo</div>
+                    </div>
+                </div>
+
+                <!-- Charts Row -->
+                <div class="dashboard-grid">
+                    <div class="card chart-card">
+                        <div class="card-header">
+                            <h3>Segnalazioni per Categoria</h3>
+                        </div>
+                        <div class="bar-chart" id="barChart"></div>
+                        <div class="bar-labels" id="barLabels"></div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header"><h3>Distribuzione Stati</h3></div>
+                        <div class="donut-flex">
+                            <div class="donut-item">
+                                <svg viewBox="0 0 120 120" class="donut-svg" id="donutStato"></svg>
+                                <div class="donut-center"><span class="donut-pct" id="donutStatoPct">0%</span><span class="donut-lbl">Risolte</span></div>
+                            </div>
+                            <div class="donut-item">
+                                <svg viewBox="0 0 120 120" class="donut-svg" id="donutOggetti"></svg>
+                                <div class="donut-center"><span class="donut-pct" id="donutOggettiPct">0%</span><span class="donut-lbl">Ritrovati</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent -->
+                <div class="recent-grid">
+                    <div class="card">
+                        <div class="card-header"><h3>Ultime Segnalazioni</h3></div>
+                        <div class="recent-list" id="recentSegnalazioni"></div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header"><h3>Oggetti Recenti</h3></div>
+                        <div class="recent-list" id="recentOggetti"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SEGNALAZIONI -->
+            <section id="segnalazioniSection" class="section" style="display:none;">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Segnalazioni del Territorio</h3>
+                        <div class="filters">
+                            <div class="search-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                            <input type="text" id="searchSegnalazioni" placeholder="Cerca titolo, zona, categoria...">
+                        </div>
+                            <select id="filterCategoria" class="filter-select"><option value="">Tutte le categorie</option></select>
+                            <select id="filterStato" class="filter-select"><option value="">Tutti gli stati</option></select>
+                            <select id="filterPriorita" class="filter-select"><option value="">Tutte le priorità</option></select>
+                        </div>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="table" id="tabellaSegnalazioni">
+                            <thead><tr><th>ID</th><th>Titolo</th><th>Categoria</th><th>Zona</th><th>Priorità</th><th>Data</th><th>Stato</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <p id="noSegnalazioni" class="no-data" style="display:none;">Nessuna segnalazione trovata.</p>
+                </div>
+            </section>
+
+            <!-- OGGETTI -->
+            <section id="oggettiSection" class="section" style="display:none;">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Oggetti Smarriti e Ritrovati</h3>
+                        <div class="filters">
+                            <div class="search-box">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/></svg>
+                            <input type="text" id="searchOggetti" placeholder="Cerca nome, luogo, tipologia...">
+                        </div>
+                            <select id="filterTipologia" class="filter-select"><option value="">Tutte le tipologie</option></select>
+                            <select id="filterAnnuncio" class="filter-select"><option value="">Tutti gli annunci</option></select>
+                        </div>
+                    </div>
+                    <div class="table-wrap">
+                        <table class="table" id="tabellaOggetti">
+                            <thead><tr><th>ID</th><th>Nome</th><th>Tipologia</th><th>Annuncio</th><th>Luogo</th><th>Data</th><th>Stato</th></tr></thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                    <p id="noOggetti" class="no-data" style="display:none;">Nessun oggetto trovato.</p>
+                </div>
+            </section>
+
+            <!-- STATISTICHE -->
+            <section id="statisticheSection" class="section" style="display:none;">
+                <div class="stats-grid">
+                    <div class="card"><h4>Segnalazioni per Stato</h4><div id="statsStato" class="stat-list"></div></div>
+                    <div class="card"><h4>Segnalazioni per Categoria</h4><div id="statsCategoria" class="stat-list"></div></div>
+                    <div class="card"><h4>Segnalazioni per Priorità</h4><div id="statsPriorita" class="stat-list"></div></div>
+                    <div class="card"><h4>Oggetti per Tipologia</h4><div id="statsTipologia" class="stat-list"></div></div>
+                </div>
+            </section>
+
+            <!-- INFO -->
+            <section id="infoSection" class="section" style="display:none;">
+                <div class="card info-card">
+                    <h3>Informazioni su CivicLink</h3>
+                    <p>CivicLink è un'applicazione per migliorare la vita quotidiana di una comunità. Permette di segnalare problemi territoriali e gestire oggetti smarriti o ritrovati.</p>
+                    <div class="arch-flow">
+                        <div class="arch-step"><span>&#128187;</span><p>Terminale</p><small>main.py</small></div>
+                        <span class="arch-arrow">&rarr;</span>
+                        <div class="arch-step"><span>&#128013;</span><p>Python</p><small>Logica</small></div>
+                        <span class="arch-arrow">&rarr;</span>
+                        <div class="arch-step"><span>&#128196;</span><p>JSON/CSV</p><small>Export</small></div>
+                        <span class="arch-arrow">&rarr;</span>
+                        <div class="arch-step"><span>&#127760;</span><p>Dashboard</p><small>HTML/CSS/JS</small></div>
+                    </div>
+                    <p>100% offline. Nessun server, nessun database, nessuna API esterna.</p>
+                    <p><strong>Progetto realizzato per il Python Innovation Hackathon &mdash; Tema: Smart Community</strong></p>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

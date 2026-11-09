@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "titolo": "TEST - Lampione spento",
+    "descrizione": "TEST - Lampione non funzionante al civico 1",
+    "categoria": "Illuminazione",
+    "zona": "Via QA 1",
+    "priorita": "Media",
+    "data": "2026-11-06",
+    "stato": "Aperta"
+  },
+  {
+    "id": 2,
+    "titolo": "Problema",
+    "descrizione": "Problema",
+    "categoria": "Altro",
+    "zona": "Urgente",
+    "priorita": "Bassa",
+    "data": "2026-11-06",
+    "stato": "Aperta"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "nome": "Chiavi macchina",
+    "descrizione": "Chiavi con portachiavi rosso",
+    "tipologia": "Chiavi",
+    "luogo": "Giardinetti",
+    "annuncio": "Smarrito",
+    "data": "2026-11-06",
+    "stato": "Attivo"
+  },
+  {
+    "id": 2,
+    "nome": "d",
+    "descrizione": "d",
+    "tipologia": "Altro",
+    "luogo": "ciao",
+    "annuncio": "Ritrovato",
+    "data": "2026-11-06",
+    "stato": "Risolto"
+  }
+]

@@ -1,0 +1,3 @@
+# CivicLink - Python Innovation Hackathon
+# Nessuna dipendenza esterna richiesta.
+# Utilizza esclusivamente la Standard Library di Python.

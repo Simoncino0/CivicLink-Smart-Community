@@ -1,0 +1,3 @@
+id,titolo,descrizione,categoria,zona,priorita,data,stato
+1,TEST - Lampione spento,TEST - Lampione non funzionante al civico 1,Illuminazione,Via QA 1,Media,2026-11-06,Aperta
+2,Problema,Problema,Altro,Urgente,Bassa,2026-11-06,Aperta

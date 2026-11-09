@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "nome": "Portafoglio nero",
+    "descrizione": "Portafoglio in pelle con documenti all'interno.",
+    "tipologia": "Documenti",
+    "luogo": "Fermata autobus Via Mazzini",
+    "annuncio": "Ritrovato",
+    "data": "2026-11-04",
+    "stato": "Attivo"
+  },
+  {
+    "id": 2,
+    "nome": "Mazzo di chiavi",
+    "descrizione": "5 chiavi con portachiavi rosso.",
+    "tipologia": "Chiavi",
+    "luogo": "Parco giochi comunale",
+    "annuncio": "Smarrito",
+    "data": "2026-11-03",
+    "stato": "Attivo"
+  },
+  {
+    "id": 3,
+    "nome": "Smartphone",
+    "descrizione": "Smartphone Android con cover blu.",
+    "tipologia": "Elettronica",
+    "luogo": "Biblioteca civica",
+    "annuncio": "Ritrovato",
+    "data": "2026-11-02",
+    "stato": "Risolto"
+  }
+]

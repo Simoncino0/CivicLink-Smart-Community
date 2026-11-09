@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "progetto": "CivicLink",
+    "versione": "1.0.0",
+    "data_esportazione": "2026-11-06T12:00:00"
+  },
+  "statistiche": {
+    "totale_segnalazioni": 8,
+    "segnalazioni_aperte": 3,
+    "segnalazioni_in_lavorazione": 2,
+    "segnalazioni_risolte": 3,
+    "categoria_piu_frequente": "Illuminazione",
+    "totale_oggetti": 5,
+    "oggetti_smarriti": 3,
+    "oggetti_ritrovati": 2
+  },
+  "segnalazioni": [
+    {"id": 1, "titolo": "Lampione non funzionante", "descrizione": "Il lampione in Via Roma 15 non funziona da una settimana.", "categoria": "Illuminazione", "zona": "Via Roma 15", "priorita": "Media", "data": "2026-10-28", "stato": "Aperta"},
+    {"id": 2, "titolo": "Buca pericolosa sulla carreggiata", "descrizione": "Buca profonda di circa 30cm, rischio per ciclisti.", "categoria": "Strade", "zona": "Via Garibaldi 42", "priorita": "Alta", "data": "2026-10-30", "stato": "In lavorazione"},
+    {"id": 3, "titolo": "Cassonetto stracolmo", "descrizione": "Il cassonetto di Piazza Verdi è pieno da giorni.", "categoria": "Rifiuti", "zona": "Piazza Verdi", "priorita": "Media", "data": "2026-11-01", "stato": "Aperta"},
+    {"id": 4, "titolo": "Albero pericolante", "descrizione": "Un grosso ramo caduto sul marciapiede.", "categoria": "Verde pubblico", "zona": "Viale dei Tigli", "priorita": "Alta", "data": "2026-11-02", "stato": "Risolta"},
+    {"id": 5, "titolo": "Panchine danneggiate", "descrizione": "Panchine con vernice scrostata nel parco.", "categoria": "Verde pubblico", "zona": "Parco Comunale", "priorita": "Bassa", "data": "2026-11-03", "stato": "In lavorazione"},
+    {"id": 6, "titolo": "Lampione intermittente", "descrizione": "Il lampione all'incrocio si accende e spegne.", "categoria": "Illuminazione", "zona": "Via Mazzini / Corso Italia", "priorita": "Media", "data": "2026-11-04", "stato": "Aperta"},
+    {"id": 7, "titolo": "Segnaletica stradale sbiadita", "descrizione": "Strisce pedonali quasi invisibili.", "categoria": "Strade", "zona": "Via Dante 28", "priorita": "Media", "data": "2026-11-05", "stato": "Risolta"},
+    {"id": 8, "titolo": "Rifiuti abbandonati", "descrizione": "Rifiuti ingombranti vicino al campo sportivo.", "categoria": "Rifiuti", "zona": "Via dello Sport 5", "priorita": "Alta", "data": "2026-11-06", "stato": "Risolta"}
+  ],
+  "oggetti": [
+    {"id": 1, "nome": "Portafoglio marrone", "descrizione": "Portafoglio in pelle con documenti.", "tipologia": "Documenti", "luogo": "Fermata autobus Via Mazzini", "annuncio": "Ritrovato", "data": "2026-11-04", "stato": "Attivo"},
+    {"id": 2, "nome": "Mazzo di chiavi", "descrizione": "5 chiavi con portachiavi rosso.", "tipologia": "Chiavi", "luogo": "Parco giochi comunale", "annuncio": "Smarrito", "data": "2026-11-03", "stato": "Attivo"},
+    {"id": 3, "nome": "Smartphone Samsung", "descrizione": "Samsung Galaxy con cover blu.", "tipologia": "Elettronica", "luogo": "Biblioteca civica", "annuncio": "Ritrovato", "data": "2026-11-02", "stato": "Risolto"},
+    {"id": 4, "nome": "Zaino scolastico", "descrizione": "Zaino blu con libri e quaderni.", "tipologia": "Accessori", "luogo": "Scuola media Via Roma", "annuncio": "Smarrito", "data": "2026-11-05", "stato": "Attivo"},
+    {"id": 5, "nome": "Ombrello nero", "descrizione": "Ombrello pieghevole con manico in legno.", "tipologia": "Accessori", "luogo": "Bar Centrale Piazza Garibaldi", "annuncio": "Smarrito", "data": "2026-11-06", "stato": "Attivo"}
+  ]
+}

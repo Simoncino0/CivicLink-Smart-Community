@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "titolo": "Lampione rotto",
+    "descrizione": "Il lampione in Via Roma 15 non funziona da una settimana.",
+    "categoria": "Illuminazione",
+    "zona": "Via Roma 15",
+    "priorita": "Media",
+    "data": "2026-10-28",
+    "stato": "Aperta"
+  },
+  {
+    "id": 2,
+    "titolo": "Buca pericolosa",
+    "descrizione": "Buca profonda sulla carreggiata, rischio per ciclisti.",
+    "categoria": "Strade",
+    "zona": "Via Garibaldi 42",
+    "priorita": "Alta",
+    "data": "2026-10-30",
+    "stato": "In lavorazione"
+  },
+  {
+    "id": 3,
+    "titolo": "Cassonetto pieno",
+    "descrizione": "Il cassonetto di Piazza Verdi e stracolmo.",
+    "categoria": "Rifiuti",
+    "zona": "Piazza Verdi",
+    "priorita": "Media",
+    "data": "2026-11-01",
+    "stato": "Aperta"
+  },
+  {
+    "id": 4,
+    "titolo": "Ramo caduto",
+    "descrizione": "Un grosso ramo e caduto sul marciapiede di Viale dei Tigli.",
+    "categoria": "Verde pubblico",
+    "zona": "Viale dei Tigli",
+    "priorita": "Alta",
+    "data": "2026-11-02",
+    "stato": "Risolta"
+  },
+  {
+    "id": 5,
+    "titolo": "Atti vandalici",
+    "descrizione": "Panchine danneggiate nel parco comunale.",
+    "categoria": "Sicurezza",
+    "zona": "Parco Comunale",
+    "priorita": "Bassa",
+    "data": "2026-11-03",
+    "stato": "Aperta"
+  }
+]
